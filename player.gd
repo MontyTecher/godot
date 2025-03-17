@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 @export var speed = 400
 @export var gravity = Vector2(0,100)
-var screen_size
 
+# Put all of this into _process and follow the 2D tutorial. 
 
 func get_input():
 	var input_direction = Input.get_vector("left", "right", "up", "down")
