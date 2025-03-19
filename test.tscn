@@ -1,7 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://p042a1vncss1"]
+[gd_scene load_steps=3 format=3 uid="uid://p042a1vncss1"]
 
-[ext_resource type="PackedScene" uid="uid://bqymr4cnrv64r" path="res://player.tscn" id="1_37kl0"]
+[ext_resource type="PackedScene" uid="uid://dimnia2j7jbgo" path="res://player2.tscn" id="1_8uh7m"]
+[ext_resource type="PackedScene" uid="uid://bqymr4cnrv64r" path="res://player1.tscn" id="1_37kl0"]
 
 [node name="Test" type="Node2D"]
+position = Vector2(1, 0)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 648.0
+color = Color(0.98429, 0.824738, 1, 1)
+
+[node name="player2" parent="." instance=ExtResource("1_8uh7m")]
+position = Vector2(63, 319)
 
 [node name="Player" parent="." instance=ExtResource("1_37kl0")]
+position = Vector2(1089, 316)
